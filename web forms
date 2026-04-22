@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Accessories Order Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Electronic Accessories Order Form</h1>
+
+    <form>
+        <!-- Personal Information -->
+        <h2>Personal Information</h2>
+        <input type="text" placeholder="Full name (e.g., Aisha Mwangi)" required>
+        <input type="text" placeholder="ID / Passport Number" required>
+        <input type="date">
+
+        <select required>
+            <option value="">Select Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+
+        <!-- Contact Information -->
+        <h2>Contact Information</h2>
+        <input type="email" placeholder="Email address" required>
+        <input type="tel" placeholder="Phone number (e.g., 0712 345 678)" required>
+        <input type="tel" placeholder="Alternate phone (optional)">
+
+        <select>
+            <option value="">Preferred Contact Method</option>
+            <option>Email</option>
+            <option>Phone</option>
+        </select>
+
+        <!-- Product Selection -->
+        <h2>Product Selection</h2>
+        <select required>
+            <option value="">Select Product Category</option>
+            <option>Laptops</option>
+            <option>Accessories</option>
+            <option>Phones</option>
+        </select>
+
+        <input type="text" placeholder="Brand / Model (e.g., Dell XPS 15)">
+        
+        <input type="number" min="1" value="1">
+
+        <select>
+            <option value="">Select Warranty</option>
+            <option>6 Months</option>
+            <option>1 Year</option>
+            <option>2 Years</option>
+        </select>
+
+        <!-- Delivery Details -->
+        <h2>Delivery Details</h2>
+        <input type="text" placeholder="Delivery Address (e.g., Moi Avenue, 4th floor)" required>
+        <input type="text" placeholder="City / Town (e.g., Nairobi)" required>
+        <input type="text" placeholder="Postal Code (e.g., 00100)">
+        
+        <input type="text" value="Kenya" readonly>
+
+        <select>
+            <option value="">Delivery Speed</option>
+            <option>Standard (3-5 days)</option>
+            <option>Express (1-2 days)</option>
+            <option>Pickup at store</option>
+        </select>
+
+        <textarea placeholder="Special delivery instructions (e.g., leave with guard)"></textarea>
+
+        <!-- Payment Preferences -->
+        <h2>Payment Preferences</h2>
+        <select required>
+            <option value="">Select Payment Method</option>
+            <option>M-PESA</option>
+            <option>PayPal</option>
+            <option>Online Banking</option>
+        </select>
+
+        <input type="tel" placeholder="M-PESA Phone Number (if applicable)">
+        <input type="text" placeholder="PayPal Email / Banking Reference">
+
+        <button type="submit">Submit Order</button>
+    </form>
+</div>
+
+</body>
+</html>
